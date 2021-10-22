@@ -1,0 +1,80 @@
+{
+  "name": "bootstrap-vue-argon-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "npm run serve",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "dependencies": {
+    "@koas/v-hscroll": "^1.0.2",
+    "@vue-stripe/vue-stripe": "^4.2.5",
+    "axios": "^0.21.1",
+    "bootstrap": "4.3.1",
+    "bootstrap-icons": "^1.5.0",
+    "bootstrap-vue": "^2.5.0",
+    "braintree-dropin-vue": "^0.0.7",
+    "braintree-web": "^3.78.0",
+    "braintree-web-drop-in": "^1.30.0",
+    "chart.js": "^2.9.3",
+    "d3": "^5.7.0",
+    "datamaps": "^0.5.9",
+    "date-fns": "^1.30.1",
+    "dropzone": "^5.5.1",
+    "element-ui": "2.15.5",
+    "es6-promise": "^4.1.1",
+    "firebase": "^8.6.5",
+    "flatpickr": "^4.5.7",
+    "fuse.js": "^3.2.0",
+    "gmap-vue": "^1.5.0",
+    "google-maps": "^3.2.1",
+    "jquery": "^3.6.0",
+    "nouislider": "^12.1.0",
+    "perfect-scrollbar": "^1.3.0",
+    "quill": "^1.3.6",
+    "sweetalert2": "^9.5.4",
+    "uuid": "^8.3.2",
+    "v-mask": "^2.2.4",
+    "vee-validate": "^3.2.1",
+    "vue": "^2.6.11",
+    "vue-backtotop": "^1.6.1",
+    "vue-braintree": "^2.0.3",
+    "vue-chartjs": "^3.5.0",
+    "vue-clipboard2": "^0.3.0",
+    "vue-flatpickr-component": "^8.1.2",
+    "vue-gtag": "^1.16.1",
+    "vue-html-to-paper": "^1.4.3",
+    "vue-router": "^3.0.6",
+    "vue-scrollto": "^2.20.0",
+    "vue-social-sharing": "^3.0.8",
+    "vue-toast-notification": "^0.6.2",
+    "vue2-transitions": "^0.2.3",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-plugin-component": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "author": "Creative Tim - https://www.creative-tim.com/",
+  "description": "BootstrapVue Argon Dashboard"
+}

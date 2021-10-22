@@ -1,0 +1,221 @@
+.el-dialog__wrapper {
+  padding: 0 20px;
+
+  .el-dialog {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.2);
+    border-radius: 21px;
+    max-width: 700px;
+    min-height: 620px;
+    width: initial !important;
+
+    &__headerbtn {
+      top: 36px;
+      right: 40px;
+    }
+
+    &__close {
+      background: url("../images/close.svg") !important;
+      content: "" !important;
+      background-repeat: no-repeat !important;
+      width: 20px;
+      height: 20px;
+      color: transparent;
+    }
+  
+    &__header {
+      text-align: center;
+      padding: 32px 20px;
+    }
+  
+    &__title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      color: #646363;
+    }
+
+    &__body {
+      padding: 32px 58px 64px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 0;
+
+    .el-dialog {
+      margin: 0 !important;
+      border-radius: 0;
+      height: 100%;
+
+      &__headerbtn {
+        top: 26px;
+        right: 22px;
+      }
+
+      &__header {
+        padding: 24px 20px;
+      }
+
+      &__body {
+        padding: 8px 20px 32px;
+      }
+    }
+  }
+}
+
+.el-drawer__wrapper {
+  .el-drawer {
+    width: 491px !important;
+
+    &__header {
+      padding: 40px 40px;
+      text-align: center;
+      margin: 0;
+  
+      span {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #646363;
+      }
+    }
+
+    &__close-btn {
+      position: absolute;
+      top: 37px;
+      left: 40px;
+
+      .el-dialog__close {
+        background: url("../images/left_arrow.svg") !important;
+        content: "" !important;
+        background-repeat: no-repeat !important;
+        height: 25px;
+        width: 17.75px;
+        color: transparent;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &.mobile-navbar {
+      .el-drawer {
+        width: 295px !important;
+
+        &__header {
+          padding: 26px 16px 80px;
+          text-align: left;
+        }
+
+        &__close-btn {
+          position: absolute;
+          top: 25px;
+          right: 16px;
+          left: initial;
+    
+          .el-dialog__close {
+            background: url("../images/close.svg") !important;
+            content: "" !important;
+            background-repeat: no-repeat !important;
+            height: 20px;
+            width: 20px;
+            color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    &.mybag-drawer {
+      .el-drawer {
+        width: 100% !important;
+
+        &__header {
+          padding: 26px 16px;
+        }
+
+        &__close-btn {
+          position: absolute;
+          top: 25px;
+          right: 16px;
+          left: initial;
+    
+          .el-dialog__close {
+            background: url("../images/close.svg") !important;
+            content: "" !important;
+            background-repeat: no-repeat !important;
+            height: 20px;
+            width: 20px;
+            color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.el-popper {
+  .popper__arrow {
+    display: none !important;
+  }
+}
+
+.el-backtop {
+  bottom: 100px !important;
+}
+
+.v-toast {
+  z-index: 9999999 !important;
+}
+
+input.custom-input {
+  width: 100%;
+  border: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  background: #F3F3F3;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #646363;
+  padding: 16px 37px;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    & {
+      padding: 12px 14px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+.default-btn {
+  background: #23A334;
+  border-radius: 21px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-align: center; 
+  cursor: pointer;
+
+  &.disabled,
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.link-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #23A334;
+  text-align: center;
+  cursor: pointer;
+}

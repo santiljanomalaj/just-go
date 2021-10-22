@@ -1,0 +1,139 @@
+/*!
+
+=========================================================
+* Vue Argon Dashboard - v1.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+// Core
+
+@import "custom/functions";
+@import "custom/variables";
+@import "custom/mixins";
+
+// Bootstrap (4.1.3) components
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+// Argon utilities and components
+
+@import "custom/reboot";
+@import "custom/utilities";
+@import "custom/components";
+
+// Vendor (Plugins)
+
+@import "custom/vendors";
+@import "./global.scss";
+
+.b-toaster-top-right{
+  position: fixed;
+  left: .5rem;
+  right: .5rem;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  top: 0;
+  overflow: visible;
+  z-index: 100;
+}
+.b-toaster-slot{
+  position: absolute;
+  max-width: 350px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+.b-toast {
+  display: block;
+  position: relative;
+  max-width: 350px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-clip: padding-box;
+  z-index: 1;
+  border-radius: .25rem;
+  margin-bottom: 12px;
+}
+.b-toast-success{
+
+}
+.b-toast .toast {
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.b-toast-success .toast {
+  background-color: #e6f5e9;
+}
+.b-toast-danger .toast {
+  background-color: #fcedee;
+}
+.toast-header {
+  display: flex;
+  align-items: center;
+  padding: .25rem .75rem;
+  color: #6c757d;
+  background-color: hsla(0,0%,100%,.85);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  border-radius: 8px 8px 0 0;
+}
+.b-toast-success .toast .toast-header{
+color: #155724;
+background-color: rgba(212,237,218,.85);
+border-bottom-color: rgba(195,230,203,.85);
+}
+.b-toast-danger .toast .toast-header{
+color: #721c24;
+background-color: rgba(248,215,218,.85);
+border-bottom-color: rgba(245,198,203,.85);
+}
+.toast .toast-body{
+  padding: 8px 12px;
+}
